@@ -1,5 +1,5 @@
 // const { getHTML, parseLinks, getData } = require('./lib/parsers') // If you want to parse the pages and not just snippets.
-
+require('dotenv').config()
 const axios = require('axios')
 const fs = require('fs-extra')
 
@@ -30,7 +30,7 @@ const returnRegex = (num) => {
 const main = async (query, reg) => {
   if (query === 'NVY') return
   const params = {
-    access_key: '2d9495868544d9630e0c29af27670357',
+    access_key: process.env.API_KEY,
     query: query,
     auto_location: '1',
     gl: 'ru', // change country if needed
@@ -58,3 +58,4 @@ const main = async (query, reg) => {
 }
 
 returnRegex('4653041') // Use string (just in case)
+// console.log(process.env.API_KEY)
