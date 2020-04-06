@@ -1,0 +1,47 @@
+{
+  "name": "catalogue-number-parser",
+  "version": "1.0.0",
+  "description": "Parses search results for regex matches.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "lint": "standard | snazzy || exit 0",
+    "lint:fix": "npx eslint . --fix || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dumihuvud/catalogue-number-parser.git"
+  },
+  "author": "Eugene Ganshi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dumihuvud/catalogue-number-parser/issues"
+  },
+  "homepage": "https://github.com/dumihuvud/catalogue-number-parser#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bluebird": "^3.7.2",
+    "fetch-cookie": "^0.8.0",
+    "fs-extra": "^9.0.0",
+    "got": "^10.7.0",
+    "jsdom": "^16.2.1",
+    "node-fetch": "^2.6.0",
+    "sanitize-html": "^1.22.1",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "snazzy": "^8.0.0",
+    "standard": "^14.3.1",
+    "@lnu/eslint-config": "^1.0.6",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsdoc": "^22.0.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "eslintConfig": {
+    "extends": "@lnu"
+  }
+}
