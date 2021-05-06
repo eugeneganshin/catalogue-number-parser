@@ -27,7 +27,7 @@
     "got": "^10.7.0",
     "jsdom": "^16.2.1",
     "node-fetch": "^2.6.0",
-    "sanitize-html": "^1.22.1",
+    "sanitize-html": "^2.3.2",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
